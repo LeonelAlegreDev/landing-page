@@ -13,6 +13,18 @@ body {
     */
 }
 
+/* COLOR PALLET */
+
+:root {
+    --footer: #222222;
+    --subscribe: #666666;
+    --subscribe-form: #333333;
+    --categories: #bbbbbb;
+    --offers: #cccccc;
+    --offers-btn: #333333;
+    --navbar: #dddddd;
+}
+
 /* LOADER */
 
 #loader {
@@ -138,7 +150,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #a2d5ff;
+    background-color: var(--navbar);
 }
 #main-nav #logo {
     margin-left: 30px;
@@ -259,7 +271,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #a2d5ff;
+    background-color: var(--offers);
 }
 #offers-btn {
     width: 25%;
@@ -272,7 +284,7 @@ header h1 {
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    background-color: #ef1b48;
+    background-color: var(--offers-btn);
 }
 #offers_wrapper {
     width: 100%;
@@ -322,7 +334,7 @@ header h1 {
         border-radius: 5px 5px 0 0;
     }
     #offers_wrapper {
-        background-color: #c2dff8;
+        background-color: var(--offers);
         border-radius: 0 0 5px 5px;
     }
 }
@@ -351,7 +363,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #a2d5ff;
+    background-color: var(--categories);
 }
 #filter span {
     line-height: 30px;
@@ -375,7 +387,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     border-top: 0px solid black;
     transition: 1s;
 }
@@ -386,9 +398,10 @@ header h1 {
     align-items: center;
     margin-left: 10px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 1);
 }
 #filter .active a {
+    font-weight: bolder;
     color: black;
     font-weight: bolder;
 }
@@ -441,7 +454,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     padding: 35px 0;
-    background-color: #a2d5ff;
+    background-color: var(--categories);
 }
 #categories span {
     font-size: 25px;
@@ -468,7 +481,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a2d5ff;
+    background-color: var(--categories);
 }
 @media (max-width: 990px) {
     #sidebar {
@@ -491,7 +504,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     padding: 15vh 0;
-    background-color: #6B627A;
+    background-color: var(--subscribe);
 }
 #subscribe h2 {
     font-size: 50px;
@@ -507,14 +520,14 @@ header h1 {
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    color: #422e5f;
+    color: var(--subscribe-form);
     border: 1px solid white;
     background-color: white;
     transition: 0.7s;
 }
 #subscribe form:hover {
-    border: 1px solid #422e5f;
-    background: #422e5f;
+    border: 1px solid var(--subscribe-form);
+    background: var(--subscribe-form);
     color: white;
 }
 #subscribe #send {
@@ -546,7 +559,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: #332F3B;
+    background: var(--footer);
 }
 footer h2 {
     margin: 20px 0;
