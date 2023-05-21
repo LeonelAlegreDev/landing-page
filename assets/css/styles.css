@@ -179,6 +179,21 @@ body {
     text-decoration: none;
     color: black;
 }
+#main-nav #nav-icon, label{
+    display: none;
+}
+@media (max-width: 800px){
+    #main-nav ul{
+        display: none;
+    }
+    #main-nav label{
+        display: block;
+        margin-right: 30px;
+    }
+    #main-nav #nav-icon{    /* Temporal */
+        display: block;
+    }
+}
 
 /* HEADER */
 
