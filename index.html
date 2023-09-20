@@ -8,6 +8,9 @@
     
     <title>My Blog</title>
 
+    <!-- PICNINC.CSS LIBRARY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+
     <!-- STYLES -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -65,6 +68,34 @@
                         <span>June 20, 2023</span>
                     </article>
                 </div>
+
+                <!-- SLIDER -->
+                <div class="tabs three">
+                    <input id='tab-1' type='radio' name='tabgroupB' checked />
+                    <input id='tab-2' type='radio' name='tabgroupB'>
+                    <input id='tab-3' type='radio' name='tabgroupB'>
+                    <div class="row">
+                        <div>
+                            <img src="./assets/images/hot-blog-1.jpg">
+                        </div>
+                        <div>
+                            <img src="./assets/images/hot-blog-1.jpg">
+                        </div>
+                        <div>
+                            <img src="./assets/images/hot-blog-1.jpg">
+                        </div>
+                    </div>
+                    <div id="controller">
+                        <label for="tab-1">
+                            <img src="./assets/images/hot-blog-1.jpg" alt="">
+                        </label>                        <label for="tab-2">
+                                <img src="./assets/images/hot-blog-1.jpg" alt="">
+                        </label>
+                        <label for="tab-3">
+                            <img src="./assets/images/hot-blog-1.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
             </section>
         </header>
         <!-- OFFERS -->
@@ -93,16 +124,17 @@
                 </div>
             </div>
         </div>
+
         <!-- EXPLORE BLOGS -->
         <div id="all-blogs">
             <section id="news">
-                <nav id="filter">
+                <div id="filter">
                     <span>ALL THE NEWS</span>
                     <ul>
                         <li><a href="#">LASTEST</a></li>
                         <li class="active"><a href="#">POPULAR</a></li>
                     </ul>
-                </nav>
+                </div>
                 <div class="column">
                     <article>
                         <img src="./assets/images/news-1.jpg" alt="Image1">
@@ -160,6 +192,7 @@
                 </div>
             </aside>
         </div>
+
         <!-- SUBSCRIBE -->
         <section id="subscribe">
             <h2>Subscribe to our newsletter</h2>
